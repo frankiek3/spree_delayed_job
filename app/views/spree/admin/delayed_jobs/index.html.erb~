@@ -49,8 +49,8 @@
               <%= link_to "retry", :action => "retry_job", :job_id => job.id %>
               <%= link_to "delete", :action => "delete", :job_id => job.id %>
             <% else %>
-              <%#= link_to "run now", spree.run_job_now_admin_delayed_jobs_path(:job_id => job.id) %>
-              <%= link_to "run now", :action => "run_job_now", :method => "puts", :job_id => job.id %>
+              <%= link_to "run now", spree.run_job_now_admin_delayed_jobs_path(:job_id => job.id) %>
+              <%#= link_to "run now", :action => "run_job_now", :method => "puts", :job_id => job.id %>
           <% end %>
           <%#= link_to_delete(job, no_text: true) %>
         </td>

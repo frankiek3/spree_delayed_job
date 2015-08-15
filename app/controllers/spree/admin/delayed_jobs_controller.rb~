@@ -20,10 +20,6 @@ class Spree::Admin::DelayedJobsController < Spree::Admin::BaseController
     @jobs = @jobs.order("run_at desc")
   end
 
-  def show
-    redirect_to :admin_delayed_jobs
-  end
-
   def create
     Delayed::Job.enqueue(SpreeDelayedJob::DelayedRake.new(params[:job_id]))
     redirect_to :admin_delayed_jobs

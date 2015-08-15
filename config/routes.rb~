@@ -15,7 +15,7 @@ routes = lambda do
 
   #match 'delayed_job_admin/delete/:id' => 'delayed_job_admin#delete', :as => 'delete_job_delayed_job_admin', :method => :get
   #match 'delayed_job_admin/retry' => 'delayed_job_admin#retry_job', :as => 'retry_job_delayed_job_admin', :method => :put
-  #match 'delayed_jobs/run_now' => 'delayed_jobs#run_job_now', :as => 'run_job_now_delayed_jobs', :method => :put
+  match 'delayed_jobs/run_now' => 'delayed_jobs#run_job_now', :as => 'run_job_now_delayed_jobs', :method => :put
 
   end
 end

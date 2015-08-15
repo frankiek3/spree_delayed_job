@@ -9,6 +9,7 @@ module SpreeDelayedJob
         env_options << " #{key.upcase}=#{value}"
       end
       system("cd #{Rails.root} && RAILS_ENV=#{Rails.env} bundle exec rake \"#{task}\" #{env_options} >> log/#{Time.now.strftime('%Y-%m-%d_%H:%M:%S')}_#{task}.log")# -- 
+nil.a
     end
   end
 end
