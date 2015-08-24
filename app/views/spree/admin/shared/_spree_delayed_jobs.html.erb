@@ -5,6 +5,7 @@
       <ul class="sidebar" data-hook="spree_delayed_jobs">
         <li><%= button_to "rake assets:clear", :action => "create" , :job => "assets:clear" %></li>
         <li><%= button_to "rake assets:precompile", :action => "create" , :job => "assets:precompile" %></li>
+        <li><%= button_to "rake deface:precompile", :action => "create" , :job => "deface:precompile" %></li>
       </ul>
     </nav>
   </div>
